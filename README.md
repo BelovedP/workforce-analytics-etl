@@ -19,4 +19,4 @@ The original file had performance scores spread sideways across six separate col
 
  ## Business Impact
  * **Hours Saved:** Replaced a highly repetitive spreadsheet scrubbing routine with a 1- click automated refresh.
- * **Better Reporting:** By restructuring the performance metrics vertically , leadership can now use a single dropdownslicer to look at monthly trends across departments instantly.
+ * **Better Reporting:** By restructuring the performance metrics vertically, leadership can now use a single dropdown slicer to look at monthly trends across departments instantly.
