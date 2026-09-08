@@ -27,6 +27,7 @@ The raw data came in European number formatting (using dots instead of commas fo
 
 ![Power Query Architecture Pipeline](pipeline_preview_V2.png)
 
+
 * **The Fix:** I selected the month columns and used the Unpivot tool. This collapsed the wide columns into two clean vertical columns: Review Month and Performance Score. Now, each employee has 6 consecutive rows (one for each month), making it incredibly easy to plug into Pivot Table or chart.
 
 
