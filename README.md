@@ -11,10 +11,10 @@ While profiling the data, I noticed that 49 employees had null values in the sal
 
 * **The Fix:** Deleting these rows would break our headcount metrics, and leaving them as blank/0 would mess up department salary averages. I calculated the company's true average salary ($543,853) and used Power Query to replace the nulls with this baseline. This kept our headcount accurate without skewing the financial metrics. 
 
-###  2. Restructuring the Performanace Metrics( The Unpivot)
-The original file had performance scores spread sideways across six separate columns( Jan, Feb, Mar, Apr, May, Jun). While this looks fine to the human, it ruins a database. You can't easily write averages, filter by month, or make a dynamic trend chartwhen data is formatted horinzontally.
+###  2. Restructuring the Performanace Metrics(The Unpivot)
+The original file had performance scores spread sideways across six separate columns(Jan, Feb, Mar, Apr, May, Jun). While this looks fine to the human, it ruins a database. You cannot easily write averages, filter by month, or make a dynamic trend chart when data is formatted horizontally.
 
-* **The Fix:** I selected the month columns and used the Unpivot tool. This collapsedthe wide columns into two clean vertical colums: Review Month and Perfromance Score. Now, each employee has 6 consecutive rows (one for each month), making it incredibly easy to plug into Pivot Table or chart.
+* **The Fix:** I selected the month columns and used the Unpivot tool. This collapsed the wide columns into two clean vertical columns: Review Month and Performance Score. Now, each employee has 6 consecutive rows (one for each month), making it incredibly easy to plug into Pivot Table or chart.
 
 
  ## Business Impact
