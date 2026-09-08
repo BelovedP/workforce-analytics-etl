@@ -1,5 +1,6 @@
 # HR Data Cleaning & Automation Project
 ![Excel Output Dashboard Preview](excel_output.png) 
+
 This repository contains an end-to-end data pipeline built in Excel Power Query. I took a raw, messy HR export containing employee details amd six months of performance data, cleaned up the formatting bugs, and restructured the table so it is readyfor corporate reporting.
 
 The entire pipeline is fully automated. When next month's data drops, a user can click "Data > Refresh All" to clean it instantly.
@@ -14,6 +15,7 @@ While profiling the data, I noticed that 49 employees had null values in the sal
 
 ###  2. Restructuring the Performanace Metrics(The Unpivot)
 The original file had performance scores spread sideways across six separate columns(Jan, Feb, Mar, Apr, May, Jun). While this looks fine to the human, it ruins a database. You cannot easily write averages, filter by month, or make a dynamic trend chart when data is formatted horizontally.
+![Power Query Architecture Pipeline](pipeline_preview.png)
 
 * **The Fix:** I selected the month columns and used the Unpivot tool. This collapsed the wide columns into two clean vertical columns: Review Month and Performance Score. Now, each employee has 6 consecutive rows (one for each month), making it incredibly easy to plug into Pivot Table or chart.
 
